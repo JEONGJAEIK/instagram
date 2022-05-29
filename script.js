@@ -14,6 +14,11 @@ document.addEventListener("DOMContentLoaded",
         let summary = document.querySelector("#summary") 
         let profileDetail = document.querySelector("#profileDetail") 
         let changing = false
+        let searchrm = document.querySelector("sa")
+        searchrm.addEventListener("click"),
+            function(e){
+                sa.remove();
+            }
 
         profileEditButton.addEventListener("click",
             function (e) {
@@ -45,7 +50,7 @@ document.addEventListener("DOMContentLoaded",
                     
                     e.target.textContent = "프로필 편집 완료"
                     changing  =true
-                }
+                } 
             }
         )
 
@@ -67,5 +72,6 @@ document.addEventListener("DOMContentLoaded",
                 profile_pic.setAttribute("src", prompt("이미지 url을 입력해 주세요!"))
             }
         )
+        
     }
 )
